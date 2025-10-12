@@ -3,18 +3,18 @@
 %bcond_with	tests		# build with tests
 # TODO:
 # - runtime Requires if any
-%define		kdeframever	6.18
+%define		kdeframever	6.19
 %define		qtver		5.15.2
 %define		kfname		kcodecs
 
 Summary:	String encoding
 Name:		kf6-%{kfname}
-Version:	6.18.0
+Version:	6.19.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	a54b28400974917c993e97a4f5fdbb1f
+# Source0-md5:	7ebcb47a73d9805527a8603a80dbeffd
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Test-devel >= %{qtver}
@@ -87,7 +87,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README.md
 %ghost %{_libdir}/libKF6Codecs.so.6
-%attr(755,root,root) %{_libdir}/libKF6Codecs.so.*.*
+%{_libdir}/libKF6Codecs.so.*.*
 %{_datadir}/qlogging-categories6/kcodecs.categories
 %{_datadir}/qlogging-categories6/kcodecs.renamecategories
 
