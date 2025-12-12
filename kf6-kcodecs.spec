@@ -3,18 +3,18 @@
 %bcond_with	tests		# build with tests
 # TODO:
 # - runtime Requires if any
-%define		kdeframever	6.20
+%define		kdeframever	6.21
 %define		qtver		5.15.2
 %define		kfname		kcodecs
 
 Summary:	String encoding
 Name:		kf6-%{kfname}
-Version:	6.20.0
+Version:	6.21.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	0490158158794dba76e6e74085eebe1b
+# Source0-md5:	5bc6769607e04374a64e787f9c324db3
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Test-devel >= %{qtver}
