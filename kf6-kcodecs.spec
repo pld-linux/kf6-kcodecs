@@ -40,6 +40,14 @@ various encodings. It supports:
 - uu
 - quoted-printable
 
+%description -l pl.UTF-8
+KCodecs dostarcza zestaw metod do operowania na łańcuchach znaków
+używając różnych kodowań. Wspiera:
+
+- base64
+- uu
+- quoted-printable
+
 %package devel
 Summary:	Header files for %{kfname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kfname}
